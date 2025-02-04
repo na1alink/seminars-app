@@ -1,0 +1,23 @@
+@use "../../assets/styles/utils/mixins";
+
+.SeminarList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+
+  &__empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+  }
+
+  @include mixins.breakpoint(l) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include mixins.breakpoint(s) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}

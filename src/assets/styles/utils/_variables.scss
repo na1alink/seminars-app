@@ -1,0 +1,26 @@
+@use "../../../assets/styles/utils/mixins";
+
+:root {
+  --font-family: "Play", sans-serif;
+  --second-family: "Open Sans", sans-serif;
+
+  --primary-color: #28a745;
+  --secondary-color: #6c757d;
+
+  --white: #ffffff;
+
+  --container-padding: 80px;
+  --container-width: 1440px;
+
+  @include mixins.breakpoint(l) {
+    --container-padding: 60px;
+  }
+
+  @include mixins.breakpoint(m) {
+    --container-padding: 40px;
+  }
+
+  @include mixins.breakpoint(s) {
+    --container-padding: 20px;
+  }
+}

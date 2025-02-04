@@ -1,0 +1,24 @@
+@use "../../../assets/styles/utils/mixins";
+
+.header {
+  padding: 40px 0;
+
+  background-color: rgba(152, 251, 152, 0.4);
+
+  @include mixins.breakpoint(s) {
+    padding: 20px 0;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+  &__title {
+    font-size: 40px;
+    font-weight: 700;
+
+    @include mixins.breakpoint(s) {
+      font-size: 28px;
+    }
+  }
+}

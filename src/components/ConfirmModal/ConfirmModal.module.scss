@@ -1,0 +1,19 @@
+@use "../../assets/styles/utils/mixins";
+.ConfirmModal {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  &__title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  &__block {
+    display: flex;
+    gap: 10px;
+
+    @include mixins.breakpoint(s) {
+      flex-direction: column;
+    }
+  }
+}

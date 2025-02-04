@@ -1,0 +1,28 @@
+.Notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeOut 5s ease-out;
+
+  &--success {
+    background-color: #28a745; // Зеленый для успешных действий
+  }
+
+  &--error {
+    background-color: #dc3545; // Красный для ошибок
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
